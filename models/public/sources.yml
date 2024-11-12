@@ -7,24 +7,27 @@ sources:
     tables:
       - name: SNOW_RAW_PS_RAW_CUSTOMERS
         columns:
-          - name: ID
+          - name: id
             tests:
-              - unique
               - not_null
-              
-                
+              - unique
+                  
+
       - name: SNOW_RAW_PS_RAW_ORDERS
         columns:
-          - name: ID
+          - name: id
             tests:
-              - unique:
-              - not_null:
-                  
+              - not_null
+              - unique
+              
+      
       - name: SNOW_RAW_PS_RAW_PAYMENTS
         columns:
-          - name: ID
+          - name: id
             tests:
-              - unique:
-              - not_null:
+              - not_null
+              - unique
+              
+
                   
        
