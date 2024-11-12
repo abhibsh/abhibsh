@@ -11,7 +11,8 @@ sources:
             tests:
               - not_null
               - unique
-                  
+          
+              
 
       - name: SNOW_RAW_PS_RAW_ORDERS
         columns:
@@ -19,6 +20,9 @@ sources:
             tests:
               - not_null
               - unique
+          - name: user_id
+            tests:
+              - not null
               
       
       - name: SNOW_RAW_PS_RAW_PAYMENTS
